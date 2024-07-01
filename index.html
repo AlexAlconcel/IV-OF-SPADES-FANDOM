@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width. initial-scale=1.0">
+<html>
+<head>
+    <title> IV of Spades </title>
+    <link rel="stylesheet" href="Home Design.css">
+
+</head>
+<body>
+
+
+  <nav class="navbar">
+
+    <img src="logo.png" class="logo">
+    <p class="textnav">IV OF SPADES</p>
+
+    
+    <ul>      
+    <li><a href="index.html" class="active">HOME</a></li>
+    <li><a href="ITECProject - About.html">ABOUT</a></li>
+    <li><a href="ITECProject - Members.html">MEMBERS</a></li>
+    <li><a href="ITECProject - Album.html">SONGS</a></li>
+    </ul>
+
+    </nav>
+
+
+
+  <section class="vid">
+<video autoplay loop muted plays-inline class="back-video">
+<source src="video1.mp4" type="video/mp4">
+</video>
+</section>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+<div class="container">
+
+    <div class="slide">
+
+        
+        <div class="item" style="background-image: url(MunBG.png);">
+            <div class="content">
+              <div class="heads"><I>IV OF SPADES HIT SONG</I><br><br><HR></div>
+                <div class="name"><I>MUNDO</I></div>
+                <div class="des">222,509,127 STREAMS</div>
+                
+            </div>
+        </div>
+        <div class="item" style="background-image: url(HeyBG.png);">
+            <div class="content">
+              <div class="heads"><I>IV OF SPADES HIT SONG</I><br><br><HR></div>
+                <div class="name"><I>HEY BARBARA</I></div>
+                <div class="des">25,862,371 STREAMS</div>
+                
+            </div>
+        </div>
+        <div class="item" style="background-image: url(IlawBG.png);">
+            <div class="content">
+              <div class="heads"><I>IV OF SPADES HIT SONG</I><br><br><HR></div>
+                <div class="name"><I>ILAW SA DAAN</I></div>
+                <div class="des">28,013,629 STREAMS</div>
+                
+            </div>
+        </div>
+        <div class="item" style="background-image: url(Disc.png);">
+            <div class="content">
+              <div class="heads"><I>IV OF SPADES HIT SONG</I><br><br><HR></div>
+                <div class="name"><I>WHERE HAVE YOU BEEN, MY DISCO?</I></div>
+                <div class="des">18,446,071 STREAMS</div>
+                
+            </div>
+        </div>
+        <div class="item" style="background-image: url(ALBUM.jpg);">
+            <div class="content">
+              <div class="heads"><I>IV OF SPADES HIT SONG</I><br><br><HR></div>
+                <div class="name"><I>COME INSIDE OF MY HEART</I></div>
+                <div class="des">229,264,212 STREAMS</div>
+                
+            </div>
+        </div>
+        <div class="item" style="background-image: url(BataBG.png);">
+            <div class="content">
+              <div class="heads"><I>IV OF SPADES HIT SONG</I><br><br><HR></div>
+                <div class="name"><I>BATA, DAHAN DAHAN</I></div>
+                <div class="des">7,594,294 STREAMS</div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+</div>
+
+
+<script>
+
+  let next = document.querySelector('.next')
+  let prev = document.querySelector('.prev')
+  
+  next.addEventListener('click', function(){
+      let items = document.querySelectorAll('.item')
+      document.querySelector('.slide').appendChild(items[0])
+  })
+  
+  prev.addEventListener('click', function(){
+      let items = document.querySelectorAll('.item')
+      document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+  })
+  
+  </script>
+</body>
+</html>

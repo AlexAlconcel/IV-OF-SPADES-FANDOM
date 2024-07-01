@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    background: linear-gradient(to top, red, black);
+    height:729px;
+
+  }
+
+  nav{
+    animation: nav 3.5s;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding:2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .logo{
+    width: 120px;
+    padding: 20px;
+  }
+
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  nav ul li a{
+    padding: 0px 20%;
+    text-decoration: none;
+    color:gray;
+    font-size:18px;
+    letter-spacing:3px;
+    left: 10%;
+    top: 53%;
+    margin: -1px 10px;
+  }
+  nav ul li a:before,
+  nav ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 7px;
+    width: 0;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: #ffffff;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+nav ul li a.active {
+  font-weight: bold; 
+  color: white; 
+}
+
+  nav .textnav{
+    letter-spacing:8px;
+    text-align:left;
+    color:white; 
+    font-size:28px; 
+    font-family:sans-serif;
+    position: absolute;
+    left: 6%;
+    top: 53%;
+    margin: -1px 10px;
+  }
+
+  
+  @keyframes nav{
+    from {
+      margin-top: -10%;
+    }
+    to {
+      margin-top: 0%;
+    }
+    0% {
+        opacity: 0;
+      }
+    
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .bgabout{
+      width: 1536px;
+      height: 420px;
+      margin-top: 130px;
+  }
+  
+  .profabout{
+      position: absolute;
+      border-radius: 50%;
+      border: solid white;
+      overflow: hidden;
+      width: 330px;
+      height: 380px;
+      top: 250px;
+      left: 200px;
+  }
+  
+  .textabout{
+      position: absolute;
+      left: 550px;
+      top: 485px;
+      color: white;
+      letter-spacing: 4px;
+      font-size: 34px;
+      font-weight: bold;
+  }
+  
+  .resume-container{
+      animation: resume 3.5s;
+      border:3.5px solid black;
+      margin:20px auto;
+      max-width: 1000px;
+      max-height: 100%;
+      align-items: center;
+      margin-top: 210px;
+      padding: 30px;
+      color:white;
+      border-radius: 30px;
+      box-shadow: 0px 0 20px white;
+        }
+    
+    hr{
+      border: solid 2px;
+    }
+  
+    h2{
+      font-size: 35px;
+      letter-spacing: 2px;
+      text-align: center;
+      font-family: 'Arial' ,sans-serif;
+      
+    }
+  
+    p.base{
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-family: 'Arial' ,sans-serif;
+    }
+  
+    p.info{
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      font-family: 'Arial' ,sans-serif;
+      padding: 0%;
+      text-align: justify;
+    align-items: center;
+    }
+
+    @media (max-width: 990px) {
+      .info {
+          font-size: 14px;
+      }
+      h2 {
+          font-size: 20px;
+      }
+      .resume-container{
+      max-height: 100%;
+      align-items: center;
+      }
+
+      .sakop{
+        width: 100%;
+      }
+  }
+
+  @media (max-width: 990px) {
+      nav {
+          padding: 20px 10px; 
+          flex-direction: row; 
+          display: flex;
+          flex-wrap: row;
+      }
+  
+      nav .textnav{
+        display: none;
+      }
+  
+      nav .logo {
+          font-size: 1.5em;
+          display: flex;
+      }
+  
+      nav ul {
+          flex-direction: row; 
+          display: flex;
+  
+      }
+  
+      nav ul li a {
+          
+          display: flex;
+      }
+  }
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 10px; 
+        flex-direction: row; 
+        display: flex;
+        flex-wrap: row;
+    }
+
+    nav .textnav{
+      display: none;
+    }
+
+    nav .logo {
+        font-size: 1.5em;
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: row; 
+        display: flex;
+
+    }
+
+    nav ul li a {
+        
+        display: flex;
+    }
+}
